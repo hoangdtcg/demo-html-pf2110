@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đây là demo</title>
+</head>
+<body>
+    <input type="text" placeholder="Bạn đang nghĩ gì?">
+    <input type="number" placeholder="Chỉ được nhập số">
+    <!-- Checkbox -->
+    <br>
+    <input type="checkbox"> <span>Bóng đá</span>
+    <br>
+    <input type="checkbox"> <span>Điện ảnh</span>
+    <!-- Radio -->
+    <br>
+    <h1>Giới tính</h1>
+    <input type="radio" name="gender"> Nam
+    <br>
+    <input type="radio" name="gender"> Nữ
+    <br>
+    <input type="radio" name="gender"> LGBT
+    <br>
+    <input type="date">
+    <br>
+    <input type="color">
+    <br>
+    <input id="id-test" type="password"><button onclick="hienThiPass()">Hiển thị</button>
+    <script>
+        function hienThiPass() {
+            if(document.getElementById("id-test").type == "password")
+                document.getElementById("id-test").type = "text";
+            else
+                document.getElementById("id-test").type = "password";
+        }
+    </script>
+</body>
+</html>
